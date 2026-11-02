@@ -20,8 +20,6 @@
          <button v-on:click="pickRandom(easy)">{{ $t('easy') }}</button>
          <button v-on:click="pickRandom(medium)">{{ $t('medium') }}</button>
          <button v-on:click="pickRandom(hard)">{{ $t('hard') }}</button>
-
-         <hr />
       </div>
    </div>
 </template>
@@ -32,7 +30,7 @@ import DiceManager from './components/dice.manager';
 import Grid from './components/grid.vue';
 import LocaleManager from './components/locale.manager';
 
-let map: { dice: number[] } = reactive({ dice: [] });
+const map: { dice: number[] } = reactive({ dice: [] });
 const localeManager = new LocaleManager();
 
 const easy = [

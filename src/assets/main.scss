@@ -8,8 +8,10 @@
 body {
    margin: 0;
    outline: 2px solid #1112;
-   outline-offset: -2px;
-   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.1));
+   outline-offset: -2px;        
+   background-image: url("./assets/bg.png");
+        background-repeat: repeat;
+   color: #eee;
 }
 
 .main {
@@ -122,14 +124,15 @@ button {
 
    button {
       width: 200px;
-      border-radius: 5px;
-      border: solid 2px black;
+      border-radius: 5px;      
+      border: solid 2px #654;
       margin: auto;
       font-size: 20px;
       padding: 10px;
 
       &:hover {
-         background-color: #0003;
+         background-color: #654a;
+         color: #eee;
       }
    }
 
